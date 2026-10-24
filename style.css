@@ -1,49 +1,157 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit',system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-header , footer{
-    background-color: #1c1a1d;
-    color: #fff;
-    padding: 10px;
-    
-}
-header{
-    align-items: center;
-    text-align: center;
+:root{
+    --cor-pretoheader:#101214; 
+    --cor-laranjaprincipal:#F47725;
+    --cor-laranjaescuro: #B94B0C;
+    --cor-laranjaclaro: #FFF0E5;
+    --cor-fundobranco: #FFFFFF;  
+    --cor-textescuro: #151719;    
+    --cor-textesuave: #657078;      
+    --cor-texteclaro: #FFFFFF;      
 }
 nav{
-    background-color: #363338;
-    color: #fff;
-    text-align: center;
-    padding:5px
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: var(--cor-pretoheader);
+    
+    #top{
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        color: var(--cor-texteclaro);
+        
+
+    }
+
+    .title h1{ 
+       line-height:1;        
+    }
+
+    .title-logo{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        font-weight: 300;
+    }
+    .icone-logo{
+        padding: 5px;
+        background-color: var(--cor-laranjaprincipal);
+        color: var(--cor-textescuro);
+        border-radius: 10px;
+        
+    }
 }
-main{
-    background-color: #504b53;
-    padding: 0px;
+.navegacao-info{
+    display: flex;
+    gap: 20px;    
+}
+    a{ 
+
+        color: var(--cor-texteclaro);
+        text-decoration: none;
+    }
+    
+#orcamento-top{
+    display: flex;
+    
+
+    .orcamento-button{
+        display: flex;
+        justify-content: center;
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: var(--cor-laranjaprincipal);
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+
+    }
+
+}
+#banner-main{
+display: flex;
+align-items: center;
+position: relative;
+min-height:600px;
+overflow: hidden;
+z-index: 1;
+
+    .img-banner{
+        position: absolute;
+        inset:0;
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        z-index: 0;
+    }
+    .banner-content{
+        position: relative;
+        padding: 30px;
+        z-index: 3;
+    }
+    .banner-notification{
+        padding: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        background-color: var(--cor-pretoheader);
+        color: var(--cor-texteclaro);
+        border: solid var(--cor-textesuave) 1px;
+        border-radius: 10px;
+        font-size: 13px;
+    }
+    .banner-titlemain{
+        line-height:1;   
+        padding-top: 30px;
+        color: var(--cor-texteclaro);
+        font-size: 60px;
+        width: 630px;
+    }
+    .banner-title{
+        color: var(--cor-laranjaprincipal);
+    }
+    .banner-description{
+        padding-top: 30px;
+        padding-bottom: 20px;
+        color: var(--cor-textesuave);
+        font-family: Arial, Helvetica, sans-serif
+    }
+    .button-banner{
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-left: 25px;
+        padding-right: 25px;
+        background-color: var(--cor-laranjaprincipal);
+        border-radius: 5px;
+        border: none;
+    }
+    .button-banner2{
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-left: 25px;
+        padding-right: 25px;
+        background-color: rgba(0, 0, 0, 0.493);
+        color: var(--cor-texteclaro);
+        border-radius: 5px;
+        border: solid rgba(255, 255, 255, 0.493) 0.1px;
+    }
 }
 
-.Serviços{
-    align-items: center;
-    text-align: center;
-    color: #f5a623;
-    
-}
-.Serviços-Desc{
-    align-items: center;
-    text-align: center;
-    color: #fff;
-}
-.Especializados{
-    background-color: hsl(278, 5%, 6%);
-    color: #fff;
-    border: 4px solid transparent;
-    border-radius: 4px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    height: 150px;
-    width: 250px;
-    padding: 10px;
-    
-    display: inline-block;
+#banner-main::before{
+    content: "";
+    position: absolute;
+    inset:0;
+    background:linear-gradient(to right, rgba(0,0,0,1),rgba(0, 0, 0, 0.534));
+    z-index: 2;
 }

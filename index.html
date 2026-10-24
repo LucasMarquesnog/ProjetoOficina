@@ -3,43 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <title>Mecaninca</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
+        
+    <nav> 
         <div id="top">
-        <h1><span class="title-logo">Oficina</span> Motor Vivo</h1>
-        </div>
-    <nav>
-        <div class="navegacao">
-            <a href="#Sobre">Sobre</a> | 
-            <a href="#Serviços">Serviços Especializados</a> | 
-            <a href="#Valores">Valores</a> | 
-            <a href="#Diferenciais">Diferenciais</a> | 
-            <a href="#Contato">Contato</a>
+            <svg class="icone-logo" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path 
+            d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+            </svg>
+            <div class="title">
+                <h1><span class="title-logo">Oficina</span> Motor Vivo</h1>
+             </div>
+        </div> 
+        <div id="navegacao">
+            <div class="navegacao-info">
+                <a href="#Sobre">Sobre</a>  
+                <a href="#Serviços">Serviços Especializados</a> 
+                <a href="#Valores">Valores</a> 
+                <a href="#Diferenciais">Diferenciais</a> 
+                <a href="#Contato">Contato</a>
+            </div>
+            
         </div>
         <div id="orcamento-top">
-            <button class="orcamento-button">Solicitar um orçamento</button>
+            <div>
+                <button class="orcamento-button">
+                    <span class="text-button">
+                    <p>Solicitar um orçamento</p>
+                    </span>
+                </button>
+            </div>
         </div>
     </nav>
     </header>
     <main>
         <section id="banner-main">
             <div class="banner-content">
-                <img src="/Projeto1/img/Banner.jpg" alt="">
-                <p class="banner-notification">HÁ MAIS DE 15 ANOS CUIDANDO DO SEU CAMINHO</p>
-                <h2>Oficina Motor Vivo - 
-                    <span class="banner-title">cuidado de verdade</span>
+                <p class="banner-notification"> HÁ MAIS DE 15 ANOS CUIDANDO DO SEU CAMINHO</p>
+                <h2 class="banner-titlemain">Oficina Motor Vivo - 
+                    <span class="banner-title">Cuidado de verdade</span>
                     com o seu carro
                 </h2>
-                <p>aqui você encontra os melhores serfviços de mecânica</p>
+                <p class="banner-description">Aqui você encontra os melhores serfviços de mecânica</p>
 
                 <div class="button-father">
                 <button class="button-banner">Orçamento gratuito</button>
                 <button class="button-banner2">Ver serviços</button>
                 </div>
             </div>
+            <img class="img-banner" src="/Projeto1/img/Banner.jpg" alt="">
         </section>
         <section id="sobre">
             <h2><span class="Sobre">Sobre a Empresa</h2></span>
