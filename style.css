@@ -146,6 +146,20 @@ z-index: 1;
         border-radius: 5px;
         border: solid rgba(255, 255, 255, 0.493) 0.1px;
     }
+    .banner-footer{
+        position: relative;
+        gap: 20px;
+        display: flex;
+        top:100px;
+        color: var(--cor-textesuave);
+        z-index: 5;
+        
+    }
+    .icone-check{
+        color: var(--cor-laranjaprincipal);
+        border: solid var(--cor-laranjaprincipal) 3px;
+        border-radius: 50%;
+    }
 }
 
 #banner-main::before{
@@ -155,3 +169,50 @@ z-index: 1;
     background:linear-gradient(to right, rgba(0,0,0,1),rgba(0, 0, 0, 0.534));
     z-index: 2;
 }
+#sobre{
+    position: relative;
+    padding: 30px;
+    background-color: var(--cor-fundobrancore);
+
+        .sobre-top{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--cor-textesuave);
+        }
+        .sobre-top2{
+            font-size: 30px;
+            color: var(--cor-laranjaprincipal);
+        }
+        .sobre-title{
+            line-height:1;
+            font-size: 70px;
+            font-weight: 400;
+            width: 50%;
+            padding-bottom: 30px;
+        }
+        .sobre-text{
+            width: 50%;
+            color: var(--cor-textescuro);
+            font-weight: 300;
+        }
+        .img-sobre{
+            position: absolute;
+            left: 55%;
+            top: 50px;
+            bottom: 40px;
+            width: 750px;
+            border-radius: 40px;
+            
+        }
+        
+}    
+    .sobre-footer{
+        padding-top: 40px;
+        gap: 10px;
+        display: flex;
+
+        .icone-escudo{
+            color: var(--cor-laranjaprincipal);
+        }
+    }
