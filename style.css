@@ -10,6 +10,7 @@
     --cor-laranjaescuro: #B94B0C;
     --cor-laranjaclaro: #FFF0E5;
     --cor-fundobranco: #FFFFFF;  
+    --cor-fundocinza: #e0e2e46c;
     --cor-textescuro: #151719;    
     --cor-textesuave: #657078;      
     --cor-texteclaro: #FFFFFF;      
@@ -173,7 +174,7 @@ z-index: 1;
 #sobre{
     position: relative;
     padding: 30px;
-    background-color: var(--cor-fundobrancore);
+    background-color: var(--cor-fundocinza);
 
         .sobre-top{
             display: flex;
@@ -280,7 +281,7 @@ z-index: 1;
         border-radius: 5px;
     }
     .title-service{
-        color: var(--cor-fundobranco);
+        color: var(--cor-texteclaro);
     }
     .text-service{
         
@@ -288,3 +289,75 @@ z-index: 1;
     }
 }
 
+#valores{
+    position: relative;
+    padding: 30px;
+    height: 50%;
+    background-color: var(--cor-fundocinza);
+
+    .title-valores{
+        font-size: 50px;
+        font-weight: 500;
+    }
+    .text-valores{
+        font-size: 15px;
+        color: var(--cor-textesuave);
+    }
+    .sobre-top2{
+            font-size: 30px;
+            color: var(--cor-laranjaprincipal);
+        }
+    .sobre-top{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--cor-textesuave);
+        }
+
+
+    .valores-retorno{
+        display: flex;
+        gap: 10px;
+        position: absolute;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        background-color: #e0e2e46c;
+        border-radius: 10px;
+        left: 80%;
+        top: 50px;
+    }
+    .retorno{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    .icon-relogio{
+        color: var(--cor-laranjaprincipal);
+        width: 40px;
+    }
+    .text-retorno{
+        display: inline;
+        justify-content: center;
+        align-items: center;
+
+        .retorno-title{
+            font-weight: 400;
+        }
+        .retorno-text{
+            color: var(--cor-textesuave);
+        }
+    }
+    
+    
+}
+.cards-main{
+        
+    .cards-valor{
+        display: flex;
+        justify-content: space-between;
+        border: solid var(--cor-fundocinza) 1px;
+        background-color: var(--cor-fundobranco);
+    }
+    }
